@@ -1,10 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   simpletest.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: skulkamt <skulkamt@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/26 22:35:26 by skulkamt          #+#    #+#             */
+/*   Updated: 2023/04/26 22:35:28 by skulkamt         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <unistd.h>
+
 int	ft_printf(const char *format, ...);
 
-int main()
+int	main(void)
 {
-	int x = 3;
+	int	x;
+
+	x = 3;
 	ft_printf("Hello, world!\n");
 	ft_printf("Hello, %s!\n", "world");
 	ft_printf("Hello, %s!\n", NULL);
